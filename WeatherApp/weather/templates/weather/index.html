@@ -4,16 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Weather app</title>
-    <link rel="stylesheet" href="
-    <link
+
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    /> -->
+    <style>
+      body {
+        background-color: rgb(131, 146, 150);
+      }
+    </style>
   </head>
   <body>
-    <p>Weather application</p>
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+    >
+      <h5 class="my-0 mr-md-auto font-weight-normal">WeatherInfo</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Home</a>
+        <a class="p-2 text-dark" href="#">Search</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="#">Sign up</a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-5 offset-1">
+          <h1>Weather Info in your area</h1>
+          <form action="">
+            <label for="city">City</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              class="form-control"
+              placeholder="Enter city"
+            />
+            <input
+              type="submit"
+              name="send"
+              value="Check weather"
+              class="btn btn-danger"
+            />
+          </form>
+        </div>
+        <div class="col-4 offset-1">
+          <h1>weather's info</h1>
+          <div class="alert alert-light"></div>
+          <h4>Weather in Seattle</h4>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
