@@ -34,7 +34,7 @@
     /> -->
     <style>
       body {
-        background-color: rgb(131, 146, 150);
+        background-color: rgb(158, 160, 172);
       }
     </style>
   </head>
@@ -52,7 +52,7 @@
     <div class="container">
       <div class="row">
         <div class="col-5 offset-1">
-          <h1>Weather Info in your area</h1>
+          <h1>What's the weather</h1>
           <form action="">
             <label for="city">City</label>
             <input
@@ -70,10 +70,19 @@
             />
           </form>
         </div>
-        <div class="col-4 offset-1">
-          <h1>weather's info</h1>
-          <div class="alert alert-light"></div>
-          <h4>Weather in Seattle</h4>
+        <div class="col-5 offset-1">
+          <h1>Weather's info</h1>
+          <div class="alert alert-danger">
+            <b>City:</b>{{info.city}}<br />
+            <b>Temperature:</b>{{info.temp}}<br />
+            <b>Humidity:</b>{{info.humidity}}<br />
+            <b>Wind:</b>{{info.wind}}<br />
+            <img
+              src="http://openweathermap.org/img/w/{{info.icon}}.png"
+              alt="weather-image"
+              class="img-thumbnail"
+            />
+          </div>
         </div>
       </div>
     </div>
