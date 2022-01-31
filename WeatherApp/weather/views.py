@@ -21,19 +21,20 @@ def index(request):
 
         # get data for each city
         res = requests.get(url.format(city.name)).json()
-    # print('City ----->', res)
-    city_info = {
-        'city': city.name,
-        'temp': res['main']['temp'],
-        'icon': res['weather'][0]['icon'],
-        'humidity': res['main']['humidity'],
-        'wind': res['wind']['speed'],
+        # print('City ----->', res)
 
-    }
+        city_info = {
+            'city': city.name,
+            'temp': res['main']['temp'],
+            'icon': res['weather'][0]['icon'],
+            'humidity': res['main']['humidity'],
+            'wind': res['wind']['speed'],
+
+        }
 
     # print('City ----->', city_info['city'])
 
-    all_cities.append(city_info)  # insert those data
+        all_cities.append(city_info)  # insert those data
 
 
 # humidity_info = res['main']['humidity']
@@ -42,7 +43,7 @@ def index(request):
 # print(wind_info)
 # handed list of cities as param all_info
 
-    context = {'all_info': city_info, 'form': form}
+    context = {'all_info': all_cities, 'form': form}
 
     return render(request, 'weather/index.html', context)
 
@@ -64,7 +65,7 @@ def second(request):
 
         city_info = {
             'city': city.name,
-            'time': res['sys']['dt_txt'],
+            # 'time': res['sys']['dt_txt'],
             # 'icon': res['weather'][0]['icon'],
             # 'humidity': res['main']['humidity'],
             # 'wind': res['wind']['speed'],

@@ -69,12 +69,12 @@
           <h1>Weather's info:</h1>
           {% for info in all_info %}
           <div class="alert alert-danger">
-            <b>City:</b>{{all_info.city}}<br />
-            <b>Temperature:</b>{{all_info.temp}}<br />
-            <b>Humidity:</b>{{all_info.humidity}}<br />
-            <b>Wind:</b>{{all_info.wind}}<br />
+            <b>City:</b>{{info.city}}<br />
+            <b>Temperature:</b>{{info.temp}}<br />
+            <b>Humidity:</b>{{info.humidity}}<br />
+            <b>Wind:</b>{{info.wind}}<br />
             <img
-              src="http://openweathermap.org/img/w/{{all_info.icon}}.png"
+              src="http://openweathermap.org/img/w/{{info.icon}}.png"
               alt="weather-image"
             />
           </div>
