@@ -81,3 +81,8 @@ def second(request):
 def third(request):
 
     return render(request, 'third.html')
+
+
+def login(request):
+
+    return render(request, 'login.html')
