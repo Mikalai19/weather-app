@@ -78,6 +78,5 @@ def second(request):
 
 
 def third(request):
-    context = {'all_info': city_info, 'form': form}
 
-    return render(request, 'third.html', context)
+    return render(request, 'third.html')
