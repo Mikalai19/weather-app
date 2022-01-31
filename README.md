@@ -21,7 +21,7 @@ What:
 
 ## Code Snippets
 
-## Create a Model
+### Create a Model
 
 ```javascript
 
@@ -33,7 +33,7 @@ class City(models.Model):
 
 ```
 
-## POST Form
+### POST Form
 
 ```javascript
 
@@ -44,7 +44,7 @@ if(request.method == 'POST'):
     form = CityForm()
 ```
 
-## Parc ing API data
+### Parcing API data
 
 ```javascript
 
@@ -65,6 +65,6 @@ cities = City.objects.all()
 
 ```
 
-## API Resource
+### API Resource
 
 https://openweathermap.org
