@@ -5,7 +5,7 @@ This is a simple web site is design to search for weather in any city in the wor
 ### User story
 
 Who:
-As a visitor web site:
+As a visitor of web site:
 
 What:
 
