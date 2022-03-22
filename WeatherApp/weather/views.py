@@ -49,7 +49,7 @@ def index(request):
 
 
 def second(request):
-    url = "http://pro.openweathermap.org/data/2.5/forecast/hourly?q={}&units=imperial&appid=d07e68bcb014a06a4d7b091c1456e711"
+    url = "http://api.openweathermap.org/data/2.5/forecast/hourly?q={}&units=imperial&appid=d07e68bcb014a06a4d7b091c1456e711"
 
     if(request.method == 'POST'):
         form = CityForm(request.POST)
